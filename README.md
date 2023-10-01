@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# BetaQueue Interview Task Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![App Screenshot](src/assets/images/App_Screen.png)
 
-## Available Scripts
+This application is a comprehensive solution for the BetaQueue interview task. It consists of five key components:
 
-In the project directory, you can run:
+1. **Participants:** This section displays a list of participants. The participant data is fetched from a Superbase table.
 
-### `npm start`
+2. **Meeting Details:** This section provides crucial information about the meeting such as date, time, location, and agenda.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Introduction:** The introduction section contains a static title and a dynamic description. Users can seamlessly edit the description by simply clicking on the text. Any changes made are promptly stored in the Superbase database, ensuring the most up-to-date information is available.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Questions:** Users have the ability to add questions dynamically. By hovering over the divider between the Introduction and Outro components, a convenient "Add" button appears. Clicking this button opens a modal where users can input both a title and description for their question. Upon submission, a new question component is created. Additionally, users can easily edit the title or description by clicking on them, converting them into input fields. Any changes made are instantly reflected in both the user interface and the database. Questions can also be removed by clicking on the vertical ellipsis, revealing a menu with the option to delete.
 
-### `npm test`
+5. **Outro:** This section marks the conclusion of the application, providing closing remarks or additional information.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Additional Features
 
-### `npm run build`
+One standout feature of this application is the ability to effortlessly rearrange questions. Through a simple drag-and-drop interface, users can reorder questions to suit their preferences.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Utilized
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **ReactJS:** The application is built using ReactJS, providing a robust and efficient user interface.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Material UI:** The UI is designed with Material UI, offering a clean and modern aesthetic.
 
-### `npm run eject`
+- **Superbase:** The Superbase platform is employed for both the database and backend operations, ensuring seamless data management.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Netlify:** The application is deployed on Netlify, providing a reliable and accessible platform for users.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To run the application locally, follow these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository to your local machine.
 
-## Learn More
+   ```bash
+   git clone https://github.com/your-username/betaqueue-interview-task.git
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Navigate to the project directory.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   cd betaqueue-interview-task
+   ```
 
-### Code Splitting
+3. Install the required dependencies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   npm install
+   ```
 
-### Analyzing the Bundle Size
+4. Start the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   npm start
+   ```
 
-### Making a Progressive Web App
+Please ensure you've set the following environment variables:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- `REACT_APP_SUPERBASE_URL`
+- `REACT_APP_SUPERBASE_KEY`
 
-### Advanced Configuration
+## Accessing the App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+If you'd like to access the application without running it locally, it's conveniently deployed on Netlify. You can [visit the app here](https://dynamic-duckanoo-a309b7.netlify.app/).
 
-### Deployment
+Feel free to explore the application and make use of its features. If you have any questions or feedback, please don't hesitate to reach out!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Thank you - Praveen Sharma]
