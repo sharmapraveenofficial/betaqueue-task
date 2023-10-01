@@ -19,7 +19,7 @@ const QuestionsComponent = () => {
   const questionsStore = useSelector((store) => store.question);
 
   const [questions, setQuestions] = useState([]);
-  const [openUpdateTitleModel, setOpenUpdateTitleModel] = useState(false);
+  // const [openUpdateTitleModel, setOpenUpdateTitleModel] = useState(false);
   const [descriptionFocusStates, setDescriptionFocusStates] = useState(
     Array(questionsStore.length).fill(false)
   );
@@ -45,7 +45,7 @@ const QuestionsComponent = () => {
       }
     }
     fetchData();
-  }, []);
+  }, [dispatch]);
 
   const handleFocus = (index, isTitle) => {
     if (isTitle) {
@@ -229,7 +229,7 @@ const QuestionsComponent = () => {
                             <Grid item xs={1.2}>
                               <MenuList
                                 questionId={id}
-                                openEditModel={setOpenUpdateTitleModel}
+                                // openEditModel={setOpenUpdateTitleModel}
                               />
                             </Grid>
                           </Grid>

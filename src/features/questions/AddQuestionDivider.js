@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Divider } from "@mui/material";
 import CustomButton from "../../utils/CustomButton";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
-import AddQuestionModel from "./AddQuestionMdel";
+import AddQuestionModel from "./AddQuestionModel";
 
 const QuestionsComponent = (props) => {
   const [isButtonVisible, setIsButtonVisible] = useState(false);
